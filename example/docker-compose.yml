@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  docker-json-server:
+    ports:
+      - "8000:8000"
+    container_name: docker-json-server
+    image: slydeveloper/json-server
+    volumes:
+      - "./db:/db"
